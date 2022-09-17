@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Examples</title>
+    <meta name='viewport'
+        content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="navbar navbar-expand-lg bg-light fixed-top">
+            <a href="" class="navbar-brand">
+                <img src="img/lazada.png" style="width:100px;" >
+            </a>
+            <button class="navbar-toggler "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseMenu"
+                    aria-expanded="false"
+                    >       
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapseMenu">
+                
+                <ul class="navbar-nav me-auto text-center ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Link 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Link 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Link 3
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href=""
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Link 4
+                        </a>
+                            <ul class="dropdown-menu text-center">
+                                <li>
+                                    <a class="dropdown-item" href=""> Dropdown 1</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href=""> Dropdown 2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href=""> Dropdown 3</a>
+                                </li>
+                            </ul>
+                    </li>
+                </ul>
+               
+                <form class="d-flex" role="search" >
+                    <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container align-items-center"><!--Carousel-->
+
+        <div id="carouselKo" class="carousel slide carousel-fade" data-bs-interval="5000" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" 
+                data-bs-target="#carouselKo" 
+                data-bs-slide-to="0" 
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1">
+                </button>
+
+                <button type="button" 
+                data-bs-target="#carouselKo" 
+                data-bs-slide-to="1" 
+                aria-label="Slide 2">
+                </button>
+
+                <button type="button" 
+                data-bs-target="#carouselKo" 
+                data-bs-slide-to="2" 
+                aria-label="Slide 3">
+                </button>
+
+            </div>
+
+            
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/img 1.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>This is Caption</h5>
+                        <p>Some description for the picture</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/img 2.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>This is Caption</h5>
+                        <p>Some description for the picture</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/img 3.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>This is Caption</h5>
+                        <p>Some description for the picture</p>
+                    </div>
+                </div>
+            </div>
+
+            <button 
+            class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#carouselKo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselKo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+
+        </div>
+
+    </div>
+    <br><br>
+    <!--accordion -->
+    <center>
+    <div class="accordion w-50 " id="accordionSample">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFisrt">
+                <button class="accordion-button" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#collapseOne" 
+                        aria-expanded="true" 
+                        aria-controls="collapseOne">
+                    Accordion #1 
+                </button>
+            </h2>
+            
+            <div id="collapseOne" 
+                class="accordion-collapse " 
+                aria-labelledby="headingFisrt"
+                data-bs-parent="#accordionSample">
+                <div class="accordion-body ">
+                    <p>Some text in accordion one</p>
+                </div>
+            </div>
+        </div>       
+
+        
+
+    </div>
+    </center>
+
+
+</body>
+
+</html>
